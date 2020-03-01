@@ -1,0 +1,112 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR033
+U 1 1 5D90D290
+P 8850 3850
+F 0 "#PWR033" H 8850 3600 50  0001 C CNN
+F 1 "GND" H 8855 3677 50  0000 C CNN
+F 2 "" H 8850 3850 50  0001 C CNN
+F 3 "" H 8850 3850 50  0001 C CNN
+	1    8850 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR034
+U 1 1 5D90DDE2
+P 9350 3850
+F 0 "#PWR034" H 9350 3700 50  0001 C CNN
+F 1 "+3V3" H 9365 4023 50  0000 C CNN
+F 2 "" H 9350 3850 50  0001 C CNN
+F 3 "" H 9350 3850 50  0001 C CNN
+	1    9350 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+1V2 #PWR035
+U 1 1 5D90E99B
+P 9800 3850
+F 0 "#PWR035" H 9800 3700 50  0001 C CNN
+F 1 "+1V2" H 9815 4023 50  0000 C CNN
+F 2 "" H 9800 3850 50  0001 C CNN
+F 3 "" H 9800 3850 50  0001 C CNN
+	1    9800 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5D90F3DE
+P 8850 3850
+F 0 "#FLG01" H 8850 3925 50  0001 C CNN
+F 1 "PWR_FLAG" H 8850 4023 50  0000 C CNN
+F 2 "" H 8850 3850 50  0001 C CNN
+F 3 "~" H 8850 3850 50  0001 C CNN
+	1    8850 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5D90FA73
+P 9350 3850
+F 0 "#FLG02" H 9350 3925 50  0001 C CNN
+F 1 "PWR_FLAG" H 9350 4023 50  0000 C CNN
+F 2 "" H 9350 3850 50  0001 C CNN
+F 3 "~" H 9350 3850 50  0001 C CNN
+	1    9350 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG03
+U 1 1 5D910202
+P 9800 3850
+F 0 "#FLG03" H 9800 3925 50  0001 C CNN
+F 1 "PWR_FLAG" H 9800 4023 50  0000 C CNN
+F 2 "" H 9800 3850 50  0001 C CNN
+F 3 "~" H 9800 3850 50  0001 C CNN
+	1    9800 3850
+	-1   0    0    1   
+$EndComp
+$Sheet
+S 950  3500 1950 500 
+U 5E5C4E42
+F0 "Power" 50
+F1 "power.sch" 50
+$EndSheet
+$Sheet
+S 700  700  1650 400 
+U 5E5F2441
+F0 "SPI" 50
+F1 "spi.sch" 50
+$EndSheet
+$Sheet
+S 750  1800 1600 350 
+U 5E5F7D61
+F0 "IO" 50
+F1 "io.sch" 50
+$EndSheet
+$Sheet
+S 850  4650 2050 550 
+U 5E63F9B5
+F0 "FPGA" 50
+F1 "fpga.sch" 50
+$EndSheet
+$Sheet
+S 850  5750 2500 600 
+U 5E6627F3
+F0 "SRAM" 50
+F1 "sram.sch" 50
+$EndSheet
+$EndSCHEMATC
