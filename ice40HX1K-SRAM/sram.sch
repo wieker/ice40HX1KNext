@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 6
+Sheet 6 8
 Title ""
 Date ""
 Rev ""
@@ -328,4 +328,78 @@ Wire Wire Line
 Wire Wire Line
 	1750 1550 1750 2600
 NoConn ~ 3450 4050
+$Comp
+L Device:C C?
+U 1 1 5E6179A9
+P 6050 2400
+AR Path="/5E6179A9" Ref="C?"  Part="1" 
+AR Path="/5E5F7D61/5E6179A9" Ref="C?"  Part="1" 
+F 0 "C?" H 6165 2446 50  0000 L CNN
+F 1 "0.1uF" H 6165 2355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6088 2250 50  0001 C CNN
+F 3 "~" H 6050 2400 50  0001 C CNN
+	1    6050 2400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E6179AF
+P 6500 2400
+AR Path="/5E6179AF" Ref="C?"  Part="1" 
+AR Path="/5E5F7D61/5E6179AF" Ref="C?"  Part="1" 
+F 0 "C?" H 6615 2446 50  0000 L CNN
+F 1 "0.1uF" H 6615 2355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6538 2250 50  0001 C CNN
+F 3 "~" H 6500 2400 50  0001 C CNN
+	1    6500 2400
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E6179B5
+P 6250 2800
+AR Path="/5E6179B5" Ref="#PWR?"  Part="1" 
+AR Path="/5E5F7D61/5E6179B5" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6250 2550 50  0001 C CNN
+F 1 "GND" H 6255 2627 50  0000 C CNN
+F 2 "" H 6250 2800 50  0001 C CNN
+F 3 "" H 6250 2800 50  0001 C CNN
+	1    6250 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E6179BB
+P 6300 2000
+AR Path="/5E6179BB" Ref="#PWR?"  Part="1" 
+AR Path="/5E5F7D61/5E6179BB" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6300 1850 50  0001 C CNN
+F 1 "+3V3" H 6315 2173 50  0000 C CNN
+F 2 "" H 6300 2000 50  0001 C CNN
+F 3 "" H 6300 2000 50  0001 C CNN
+	1    6300 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 2550 6050 2700
+Wire Wire Line
+	6050 2700 6250 2700
+Wire Wire Line
+	6250 2700 6250 2800
+Wire Wire Line
+	6250 2700 6500 2700
+Connection ~ 6250 2700
+Wire Wire Line
+	6500 2250 6500 2150
+Wire Wire Line
+	6500 2150 6300 2150
+Wire Wire Line
+	6300 2150 6300 2000
+Wire Wire Line
+	6050 2250 6050 2150
+Wire Wire Line
+	6050 2150 6300 2150
+Connection ~ 6300 2150
+Wire Wire Line
+	6500 2550 6500 2700
 $EndSCHEMATC

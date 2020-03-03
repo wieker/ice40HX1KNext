@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 8
 Title ""
 Date ""
 Rev ""
@@ -108,5 +108,17 @@ S 850  5750 2500 600
 U 5E6627F3
 F0 "SRAM" 50
 F1 "sram.sch" 50
+$EndSheet
+$Sheet
+S 3000 800  2300 400 
+U 5E5EC834
+F0 "USB" 50
+F1 "usb.sch" 50
+$EndSheet
+$Sheet
+S 3100 1800 2550 600 
+U 5E5ECC92
+F0 "nRF52" 50
+F1 "nrf52.sch" 50
 $EndSheet
 $EndSCHEMATC
