@@ -324,7 +324,6 @@ Wire Wire Line
 Wire Wire Line
 	6050 3150 6050 2750
 Connection ~ 5400 3150
-Connection ~ 6050 2450
 $Comp
 L power:GND #PWR?
 U 1 1 5E5F3F31
@@ -342,19 +341,6 @@ Connection ~ 4950 3150
 Wire Wire Line
 	4950 3150 5400 3150
 $Comp
-L power:+3V3 #PWR?
-U 1 1 5E5F5466
-P 6050 2200
-F 0 "#PWR?" H 6050 2050 50  0001 C CNN
-F 1 "+3V3" H 6065 2373 50  0000 C CNN
-F 2 "" H 6050 2200 50  0001 C CNN
-F 3 "" H 6050 2200 50  0001 C CNN
-	1    6050 2200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6050 2200 6050 2450
-$Comp
 L power:+5V #PWR?
 U 1 1 5E5F763C
 P 4400 1500
@@ -367,4 +353,174 @@ F 3 "" H 4400 1500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4400 1500 4400 1950
+$Comp
+L Analog_Switch:MAX40200AUK U?
+U 1 1 5E608631
+P 4200 4850
+F 0 "U?" H 4200 5217 50  0000 C CNN
+F 1 "MAX40200AUK" H 4200 5126 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 4200 5350 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX40200.pdf" H 4200 5350 50  0001 C CNN
+	1    4200 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Analog_Switch:MAX40200AUK U?
+U 1 1 5E608F29
+P 7350 2200
+F 0 "U?" H 7350 2567 50  0000 C CNN
+F 1 "MAX40200AUK" H 7350 2476 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 7350 2700 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX40200.pdf" H 7350 2700 50  0001 C CNN
+	1    7350 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E60C10F
+P 8150 1850
+F 0 "#PWR?" H 8150 1700 50  0001 C CNN
+F 1 "+3V3" H 8165 2023 50  0000 C CNN
+F 2 "" H 8150 1850 50  0001 C CNN
+F 3 "" H 8150 1850 50  0001 C CNN
+	1    8150 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 1850 8150 2100
+Wire Wire Line
+	6050 2450 6050 2300
+Wire Wire Line
+	6050 2100 6450 2100
+Connection ~ 6050 2450
+Wire Wire Line
+	6050 2300 6950 2300
+Connection ~ 6050 2300
+Wire Wire Line
+	6050 2300 6050 2100
+$Comp
+L Device:C C?
+U 1 1 5E60FC3E
+P 6450 2250
+F 0 "C?" H 6565 2296 50  0000 L CNN
+F 1 "C" H 6565 2205 50  0000 L CNN
+F 2 "" H 6488 2100 50  0001 C CNN
+F 3 "~" H 6450 2250 50  0001 C CNN
+	1    6450 2250
+	1    0    0    -1  
+$EndComp
+Connection ~ 6450 2100
+Wire Wire Line
+	6450 2100 6950 2100
+$Comp
+L Device:C C?
+U 1 1 5E61086D
+P 7900 2250
+F 0 "C?" H 8015 2296 50  0000 L CNN
+F 1 "C" H 8015 2205 50  0000 L CNN
+F 2 "" H 7938 2100 50  0001 C CNN
+F 3 "~" H 7900 2250 50  0001 C CNN
+	1    7900 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E610C79
+P 8300 2250
+F 0 "C?" H 8415 2296 50  0000 L CNN
+F 1 "C" H 8415 2205 50  0000 L CNN
+F 2 "" H 8338 2100 50  0001 C CNN
+F 3 "~" H 8300 2250 50  0001 C CNN
+	1    8300 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 2100 7900 2100
+Connection ~ 7900 2100
+Wire Wire Line
+	7900 2100 8150 2100
+Connection ~ 8150 2100
+Wire Wire Line
+	8150 2100 8300 2100
+$Comp
+L power:GND #PWR?
+U 1 1 5E6126DE
+P 7350 2750
+F 0 "#PWR?" H 7350 2500 50  0001 C CNN
+F 1 "GND" H 7355 2577 50  0000 C CNN
+F 2 "" H 7350 2750 50  0001 C CNN
+F 3 "" H 7350 2750 50  0001 C CNN
+	1    7350 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 2500 7350 2650
+Wire Wire Line
+	6450 2400 6450 2650
+Wire Wire Line
+	6450 2650 7350 2650
+Connection ~ 7350 2650
+Wire Wire Line
+	7350 2650 7350 2750
+Wire Wire Line
+	8300 2400 8300 2650
+Wire Wire Line
+	8300 2650 7900 2650
+Wire Wire Line
+	7900 2400 7900 2650
+Connection ~ 7900 2650
+Wire Wire Line
+	7900 2650 7350 2650
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E61F7B9
+P 5000 4500
+F 0 "#PWR?" H 5000 4350 50  0001 C CNN
+F 1 "+3V3" H 5015 4673 50  0000 C CNN
+F 2 "" H 5000 4500 50  0001 C CNN
+F 3 "" H 5000 4500 50  0001 C CNN
+	1    5000 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 4500 5000 4750
+$Comp
+L Device:C C?
+U 1 1 5E61F7C0
+P 4750 4900
+F 0 "C?" H 4865 4946 50  0000 L CNN
+F 1 "C" H 4865 4855 50  0000 L CNN
+F 2 "" H 4788 4750 50  0001 C CNN
+F 3 "~" H 4750 4900 50  0001 C CNN
+	1    4750 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E61F7C6
+P 5150 4900
+F 0 "C?" H 5265 4946 50  0000 L CNN
+F 1 "C" H 5265 4855 50  0000 L CNN
+F 2 "" H 5188 4750 50  0001 C CNN
+F 3 "~" H 5150 4900 50  0001 C CNN
+	1    5150 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 4750 4750 4750
+Connection ~ 4750 4750
+Wire Wire Line
+	4750 4750 5000 4750
+Connection ~ 5000 4750
+Wire Wire Line
+	5000 4750 5150 4750
+Wire Wire Line
+	5150 5050 5150 5300
+Wire Wire Line
+	5150 5300 4750 5300
+Wire Wire Line
+	4750 5050 4750 5300
+Connection ~ 4750 5300
+Wire Wire Line
+	4750 5300 4200 5300
 $EndSCHEMATC

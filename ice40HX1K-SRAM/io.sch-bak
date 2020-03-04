@@ -13,87 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Device:C C?
-U 1 1 5E67193D
-P 2900 2150
-AR Path="/5E67193D" Ref="C?"  Part="1" 
-AR Path="/5E5F7D61/5E67193D" Ref="C?"  Part="1" 
-F 0 "C?" H 3015 2196 50  0000 L CNN
-F 1 "0.1uF" H 3015 2105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 2938 2000 50  0001 C CNN
-F 3 "~" H 2900 2150 50  0001 C CNN
-	1    2900 2150
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5E671943
-P 3350 2150
-AR Path="/5E671943" Ref="C?"  Part="1" 
-AR Path="/5E5F7D61/5E671943" Ref="C?"  Part="1" 
-F 0 "C?" H 3465 2196 50  0000 L CNN
-F 1 "0.1uF" H 3465 2105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 3388 2000 50  0001 C CNN
-F 3 "~" H 3350 2150 50  0001 C CNN
-	1    3350 2150
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5E671949
-P 3100 2550
-AR Path="/5E671949" Ref="#PWR?"  Part="1" 
-AR Path="/5E5F7D61/5E671949" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3100 2300 50  0001 C CNN
-F 1 "GND" H 3105 2377 50  0000 C CNN
-F 2 "" H 3100 2550 50  0001 C CNN
-F 3 "" H 3100 2550 50  0001 C CNN
-	1    3100 2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5E67194F
-P 3150 1750
-AR Path="/5E67194F" Ref="#PWR?"  Part="1" 
-AR Path="/5E5F7D61/5E67194F" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3150 1600 50  0001 C CNN
-F 1 "+3V3" H 3165 1923 50  0000 C CNN
-F 2 "" H 3150 1750 50  0001 C CNN
-F 3 "" H 3150 1750 50  0001 C CNN
-	1    3150 1750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2900 2300 2900 2450
-Wire Wire Line
-	2900 2450 3100 2450
-Wire Wire Line
-	3100 2450 3100 2550
-Wire Wire Line
-	3100 2450 3350 2450
-Wire Wire Line
-	3350 2450 3350 2400
-Connection ~ 3100 2450
-Wire Wire Line
-	3350 2000 3350 1900
-Wire Wire Line
-	3350 1900 3150 1900
-Wire Wire Line
-	3150 1900 3150 1750
-Wire Wire Line
-	2900 2000 2900 1900
-Wire Wire Line
-	2900 1900 3150 1900
-Connection ~ 3150 1900
-Wire Wire Line
-	3350 2400 3550 2400
-Wire Wire Line
-	3550 2400 3550 3000
-Connection ~ 3350 2400
-Wire Wire Line
-	3350 2400 3350 2300
 Text GLabel 2750 3000 0    50   Input ~ 0
 CDONE
 $Comp
@@ -322,4 +241,18 @@ F 3 "~" H 5250 3300 50  0001 C CNN
 $EndComp
 NoConn ~ 8000 4300
 NoConn ~ 5050 4200
+$Comp
+L power:GND #PWR?
+U 1 1 5E61E4BE
+P 3550 4200
+F 0 "#PWR?" H 3550 3950 50  0001 C CNN
+F 1 "GND" H 3555 4027 50  0000 C CNN
+F 2 "" H 3550 4200 50  0001 C CNN
+F 3 "" H 3550 4200 50  0001 C CNN
+	1    3550 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 3650 3550 4200
+Connection ~ 3550 3650
 $EndSCHEMATC
