@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 9
+Sheet 1 11
 Title ""
 Date ""
 Rev ""
@@ -126,5 +126,17 @@ S 3300 3550 2500 500
 U 5E66F126
 F0 "Clock" 50
 F1 "clock.sch" 50
+$EndSheet
+$Sheet
+S 3800 4500 2400 500 
+U 5E662397
+F0 "UI" 50
+F1 "ui.sch" 50
+$EndSheet
+$Sheet
+S 7400 1100 2650 650 
+U 5E673250
+F0 "led" 50
+F1 "led.sch" 50
 $EndSheet
 $EndSCHEMATC
