@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 8
+Sheet 3 9
 Title ""
 Date ""
 Rev ""
@@ -309,4 +309,14 @@ Wire Wire Line
 	7100 2000 7400 2000
 NoConn ~ 7900 2100
 NoConn ~ 7400 2100
+Text GLabel 7550 3200 2    50   Input ~ 0
+spi_clk
+Text GLabel 7550 3300 2    50   Input ~ 0
+spi_ss
+Text GLabel 7550 3400 2    50   Input ~ 0
+spi_miso
+Text GLabel 7550 3500 2    50   Input ~ 0
+spi_mosi
+Text GLabel 7550 3600 2    50   Input ~ 0
+led_mcu
 $EndSCHEMATC
