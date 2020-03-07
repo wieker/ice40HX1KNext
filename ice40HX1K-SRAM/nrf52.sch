@@ -13,4 +13,126 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L RF_Bluetooth:BL652 U?
+U 1 1 5E63DD06
+P 4750 3450
+F 0 "U?" H 4750 4731 50  0000 C CNN
+F 1 "BL652" H 4750 4640 50  0000 C CNN
+F 2 "RF_Module:Laird_BL652" H 4750 2250 50  0001 C CNN
+F 3 "http://cdn.lairdtech.com/home/brandworld/files/Datasheet%20-%20BL652.pdf" H 4750 2150 50  0001 C CNN
+	1    4750 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E63E912
+P 7500 3000
+F 0 "C?" H 7615 3046 50  0000 L CNN
+F 1 "C" H 7615 2955 50  0000 L CNN
+F 2 "" H 7538 2850 50  0001 C CNN
+F 3 "~" H 7500 3000 50  0001 C CNN
+	1    7500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E63EF2C
+P 8000 3000
+F 0 "C?" H 8115 3046 50  0000 L CNN
+F 1 "C" H 8115 2955 50  0000 L CNN
+F 2 "" H 8038 2850 50  0001 C CNN
+F 3 "~" H 8000 3000 50  0001 C CNN
+	1    8000 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E63F3C7
+P 7750 3500
+F 0 "#PWR?" H 7750 3250 50  0001 C CNN
+F 1 "GND" H 7755 3327 50  0000 C CNN
+F 2 "" H 7750 3500 50  0001 C CNN
+F 3 "" H 7750 3500 50  0001 C CNN
+	1    7750 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E63F72C
+P 7750 2600
+F 0 "#PWR?" H 7750 2450 50  0001 C CNN
+F 1 "+3V3" H 7765 2773 50  0000 C CNN
+F 2 "" H 7750 2600 50  0001 C CNN
+F 3 "" H 7750 2600 50  0001 C CNN
+	1    7750 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 2850 7500 2750
+Wire Wire Line
+	7500 2750 7750 2750
+Wire Wire Line
+	7750 2750 7750 2600
+Wire Wire Line
+	7750 2750 8000 2750
+Wire Wire Line
+	8000 2750 8000 2850
+Connection ~ 7750 2750
+Wire Wire Line
+	7500 3150 7500 3400
+Wire Wire Line
+	7500 3400 7750 3400
+Wire Wire Line
+	7750 3400 7750 3500
+Wire Wire Line
+	7750 3400 8000 3400
+Wire Wire Line
+	8000 3400 8000 3150
+Connection ~ 7750 3400
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E640884
+P 4750 1950
+F 0 "#PWR?" H 4750 1800 50  0001 C CNN
+F 1 "+3V3" H 4765 2123 50  0000 C CNN
+F 2 "" H 4750 1950 50  0001 C CNN
+F 3 "" H 4750 1950 50  0001 C CNN
+	1    4750 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E640DBB
+P 4800 4900
+F 0 "#PWR?" H 4800 4650 50  0001 C CNN
+F 1 "GND" H 4805 4727 50  0000 C CNN
+F 2 "" H 4800 4900 50  0001 C CNN
+F 3 "" H 4800 4900 50  0001 C CNN
+	1    4800 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 4450 4650 4750
+Wire Wire Line
+	4650 4750 4750 4750
+Wire Wire Line
+	4950 4750 4950 4450
+Wire Wire Line
+	4750 4450 4750 4750
+Connection ~ 4750 4750
+Wire Wire Line
+	4750 4750 4800 4750
+Wire Wire Line
+	4850 4450 4850 4750
+Connection ~ 4850 4750
+Wire Wire Line
+	4850 4750 4950 4750
+Wire Wire Line
+	4800 4900 4800 4750
+Connection ~ 4800 4750
+Wire Wire Line
+	4800 4750 4850 4750
+Wire Wire Line
+	4750 1950 4750 2350
 $EndSCHEMATC

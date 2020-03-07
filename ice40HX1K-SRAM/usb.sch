@@ -16,12 +16,12 @@ $EndDescr
 $Comp
 L GitRep_SAMD:ATSAMD11C14A-SS U?
 U 1 1 5E5FB16F
-P 3450 2500
-F 0 "U?" H 3450 3381 50  0000 C CNN
-F 1 "ATSAMD11C14A-SS" H 3450 3290 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3450 1450 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42363-SAM-D11_Datasheet.pdf" H 3450 1800 50  0001 C CNN
-	1    3450 2500
+P 3000 2500
+F 0 "U?" H 3000 3381 50  0000 C CNN
+F 1 "ATSAMD11C14A-SS" H 3000 3290 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3000 1450 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42363-SAM-D11_Datasheet.pdf" H 3000 1800 50  0001 C CNN
+	1    3000 2500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -35,13 +35,9 @@ F 3 "" H 4900 2700 50  0001 C CNN
 	1    4900 2700
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	3950 2700 4500 2700
-Wire Wire Line
-	3950 2800 4500 2800
-Text GLabel 2950 2700 0    50   Input ~ 0
+Text GLabel 2500 2700 0    50   Input ~ 0
 uart_tx
-Text GLabel 2950 2800 0    50   Input ~ 0
+Text GLabel 2500 2800 0    50   Input ~ 0
 uart_rx
 $Comp
 L Device:C C?
@@ -112,12 +108,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 5E603984
-P 3450 3650
-F 0 "#PWR?" H 3450 3400 50  0001 C CNN
-F 1 "GND" H 3455 3477 50  0000 C CNN
-F 2 "" H 3450 3650 50  0001 C CNN
-F 3 "" H 3450 3650 50  0001 C CNN
-	1    3450 3650
+P 3000 3650
+F 0 "#PWR?" H 3000 3400 50  0001 C CNN
+F 1 "GND" H 3005 3477 50  0000 C CNN
+F 2 "" H 3000 3650 50  0001 C CNN
+F 3 "" H 3000 3650 50  0001 C CNN
+	1    3000 3650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -134,12 +130,12 @@ $EndComp
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5E604967
-P 3450 1500
-F 0 "#PWR?" H 3450 1350 50  0001 C CNN
-F 1 "+3V3" H 3465 1673 50  0000 C CNN
-F 2 "" H 3450 1500 50  0001 C CNN
-F 3 "" H 3450 1500 50  0001 C CNN
-	1    3450 1500
+P 3000 1500
+F 0 "#PWR?" H 3000 1350 50  0001 C CNN
+F 1 "+3V3" H 3015 1673 50  0000 C CNN
+F 2 "" H 3000 1500 50  0001 C CNN
+F 3 "" H 3000 1500 50  0001 C CNN
+	1    3000 1500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -158,28 +154,32 @@ Wire Wire Line
 Wire Wire Line
 	4200 2900 4500 2900
 Wire Wire Line
-	3450 3650 3450 3200
+	3000 3650 3000 3200
 Wire Wire Line
-	3450 1500 3450 1800
+	3000 1500 3000 1800
 Wire Wire Line
 	4500 2500 4350 2500
 Wire Wire Line
 	4350 2500 4350 3200
 NoConn ~ 4500 2600
-Text GLabel 2950 2200 0    50   Input ~ 0
+Text GLabel 2500 2200 0    50   Input ~ 0
 swd_rst
-Text GLabel 2950 2400 0    50   Input ~ 0
+Text GLabel 2500 2400 0    50   Input ~ 0
 swd_clk
-Text GLabel 2950 2500 0    50   Input ~ 0
+Text GLabel 2500 2500 0    50   Input ~ 0
 swd_io
-Text GLabel 3950 2200 2    50   Input ~ 0
+Text GLabel 3500 2200 2    50   Input ~ 0
 spi_clk
-Text GLabel 3950 2300 2    50   Input ~ 0
+Text GLabel 3500 2300 2    50   Input ~ 0
 spi_ss
-Text GLabel 3950 2400 2    50   Input ~ 0
+Text GLabel 3500 2400 2    50   Input ~ 0
 spi_miso
-Text GLabel 3950 2500 2    50   Input ~ 0
+Text GLabel 3500 2500 2    50   Input ~ 0
 spi_mosi
-Text GLabel 3950 2600 2    50   Input ~ 0
+Text GLabel 3500 2600 2    50   Input ~ 0
 led_mcu
+Wire Wire Line
+	3500 2700 4500 2700
+Wire Wire Line
+	3500 2800 4500 2800
 $EndSCHEMATC

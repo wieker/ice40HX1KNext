@@ -471,4 +471,56 @@ Wire Wire Line
 Connection ~ 7900 2650
 Wire Wire Line
 	7900 2650 7350 2650
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E61F7B9
+P 5000 4500
+F 0 "#PWR?" H 5000 4350 50  0001 C CNN
+F 1 "+3V3" H 5015 4673 50  0000 C CNN
+F 2 "" H 5000 4500 50  0001 C CNN
+F 3 "" H 5000 4500 50  0001 C CNN
+	1    5000 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 4500 5000 4750
+$Comp
+L Device:C C?
+U 1 1 5E61F7C0
+P 4750 4900
+F 0 "C?" H 4865 4946 50  0000 L CNN
+F 1 "C" H 4865 4855 50  0000 L CNN
+F 2 "" H 4788 4750 50  0001 C CNN
+F 3 "~" H 4750 4900 50  0001 C CNN
+	1    4750 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E61F7C6
+P 5150 4900
+F 0 "C?" H 5265 4946 50  0000 L CNN
+F 1 "C" H 5265 4855 50  0000 L CNN
+F 2 "" H 5188 4750 50  0001 C CNN
+F 3 "~" H 5150 4900 50  0001 C CNN
+	1    5150 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 4750 4750 4750
+Connection ~ 4750 4750
+Wire Wire Line
+	4750 4750 5000 4750
+Connection ~ 5000 4750
+Wire Wire Line
+	5000 4750 5150 4750
+Wire Wire Line
+	5150 5050 5150 5300
+Wire Wire Line
+	5150 5300 4750 5300
+Wire Wire Line
+	4750 5050 4750 5300
+Connection ~ 4750 5300
+Wire Wire Line
+	4750 5300 4200 5300
 $EndSCHEMATC
