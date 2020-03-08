@@ -53,7 +53,7 @@ $EndComp
 Wire Wire Line
 	1350 1300 1350 950 
 Wire Wire Line
-	1350 950  2800 950 
+	1350 950  2200 950 
 Wire Wire Line
 	2800 950  2800 1150
 Wire Wire Line
@@ -236,7 +236,7 @@ $EndComp
 Wire Wire Line
 	1150 3750 1150 3400
 Wire Wire Line
-	1150 3400 2600 3400
+	1150 3400 2000 3400
 Wire Wire Line
 	2600 3400 2600 3600
 Wire Wire Line
@@ -419,7 +419,7 @@ $EndComp
 Wire Wire Line
 	6400 1300 6400 950 
 Wire Wire Line
-	6400 950  7850 950 
+	6400 950  7250 950 
 Wire Wire Line
 	7850 950  7850 1150
 Wire Wire Line
@@ -602,7 +602,7 @@ $EndComp
 Wire Wire Line
 	6150 4000 6150 3650
 Wire Wire Line
-	6150 3650 7600 3650
+	6150 3650 7000 3650
 Wire Wire Line
 	7600 3650 7600 3850
 Wire Wire Line
@@ -745,4 +745,76 @@ Wire Wire Line
 Wire Wire Line
 	10350 4750 8050 4750
 Connection ~ 8050 4750
+$Comp
+L power:+3V3 #PWR0100
+U 1 1 5E715360
+P 2000 3300
+F 0 "#PWR0100" H 2000 3150 50  0001 C CNN
+F 1 "+3V3" H 2015 3473 50  0000 C CNN
+F 2 "" H 2000 3300 50  0001 C CNN
+F 3 "" H 2000 3300 50  0001 C CNN
+	1    2000 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 3300 2000 3400
+Connection ~ 2000 3400
+Wire Wire Line
+	2000 3400 2600 3400
+Wire Wire Line
+	2000 4100 2000 3400
+$Comp
+L power:+3V3 #PWR0102
+U 1 1 5E71F28F
+P 2200 850
+F 0 "#PWR0102" H 2200 700 50  0001 C CNN
+F 1 "+3V3" H 2215 1023 50  0000 C CNN
+F 2 "" H 2200 850 50  0001 C CNN
+F 3 "" H 2200 850 50  0001 C CNN
+	1    2200 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 850  2200 950 
+Connection ~ 2200 950 
+Wire Wire Line
+	2200 950  2800 950 
+Wire Wire Line
+	2200 1650 2200 950 
+$Comp
+L power:+3V3 #PWR0104
+U 1 1 5E72402D
+P 7250 850
+F 0 "#PWR0104" H 7250 700 50  0001 C CNN
+F 1 "+3V3" H 7265 1023 50  0000 C CNN
+F 2 "" H 7250 850 50  0001 C CNN
+F 3 "" H 7250 850 50  0001 C CNN
+	1    7250 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 850  7250 950 
+Connection ~ 7250 950 
+Wire Wire Line
+	7250 950  7850 950 
+Wire Wire Line
+	7250 1650 7250 950 
+$Comp
+L power:+3V3 #PWR0103
+U 1 1 5E729610
+P 7000 3550
+F 0 "#PWR0103" H 7000 3400 50  0001 C CNN
+F 1 "+3V3" H 7015 3723 50  0000 C CNN
+F 2 "" H 7000 3550 50  0001 C CNN
+F 3 "" H 7000 3550 50  0001 C CNN
+	1    7000 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 3550 7000 3650
+Connection ~ 7000 3650
+Wire Wire Line
+	7000 3650 7600 3650
+Wire Wire Line
+	7000 4350 7000 3650
 $EndSCHEMATC

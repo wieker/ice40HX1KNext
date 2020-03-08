@@ -845,49 +845,49 @@ Text GLabel 7400 4750 0    50   Input ~ 0
 cap5
 Text GLabel 7400 5050 0    50   Input ~ 0
 cap6
-Text GLabel 8950 2200 2    50   Input ~ 0
+Text GLabel 9050 2200 2    50   Input ~ 0
 clock_1
-Text GLabel 8950 2450 2    50   Input ~ 0
+Text GLabel 9050 2450 2    50   Input ~ 0
 clock_2
-Text GLabel 8950 2700 2    50   Input ~ 0
+Text GLabel 9050 2700 2    50   Input ~ 0
 clock_3
-Text GLabel 8950 2950 2    50   Input ~ 0
+Text GLabel 9050 2950 2    50   Input ~ 0
 clock_4
-Text GLabel 8950 3200 2    50   Input ~ 0
+Text GLabel 9050 3200 2    50   Input ~ 0
 clock_5
-Text GLabel 8950 3400 2    50   Input ~ 0
+Text GLabel 9050 3400 2    50   Input ~ 0
 clock_6
-Text GLabel 8900 3950 2    50   Input ~ 0
+Text GLabel 9000 3950 2    50   Input ~ 0
 spi_clk
-Text GLabel 8900 4050 2    50   Input ~ 0
+Text GLabel 9000 4050 2    50   Input ~ 0
 spi_ss
-Text GLabel 8900 4150 2    50   Input ~ 0
+Text GLabel 9000 4150 2    50   Input ~ 0
 spi_miso
-Text GLabel 8900 4250 2    50   Input ~ 0
+Text GLabel 9000 4250 2    50   Input ~ 0
 spi_mosi
-Text GLabel 8900 3850 2    50   Input ~ 0
+Text GLabel 9000 3850 2    50   Input ~ 0
 fpga_reset
-Text GLabel 8900 3750 2    50   Input ~ 0
+Text GLabel 9000 3750 2    50   Input ~ 0
 fpga_cdone
 Text GLabel 7450 5450 0    50   Input ~ 0
 fpga_uart_rx_3
 Text GLabel 7450 5550 0    50   Input ~ 0
 fpga_uart_tx_3
-Text GLabel 8900 4600 2    50   Input ~ 0
+Text GLabel 9000 4600 2    50   Input ~ 0
 uart_fpga_tx_2
-Text GLabel 8900 4700 2    50   Input ~ 0
+Text GLabel 9000 4700 2    50   Input ~ 0
 uart_fpga_rx_2
 Text GLabel 7400 5900 0    50   Input ~ 0
 uart_tx
 Text GLabel 7400 6000 0    50   Input ~ 0
 uart_rx
-Text GLabel 7400 6000 2    50   Input ~ 0
+Text GLabel 7500 6000 2    50   Input ~ 0
 IO54
-Text GLabel 7400 5900 2    50   Input ~ 0
+Text GLabel 7500 5900 2    50   Input ~ 0
 IO56
-Text GLabel 7450 5550 2    50   Input ~ 0
+Text GLabel 7550 5550 2    50   Input ~ 0
 IO57
-Text GLabel 7450 5450 2    50   Input ~ 0
+Text GLabel 7550 5450 2    50   Input ~ 0
 IO59
 Text GLabel 8900 4700 0    50   Input ~ 0
 IO60
@@ -905,13 +905,13 @@ Text GLabel 8950 2950 0    50   Input ~ 0
 IO68
 Text GLabel 8950 3200 0    50   Input ~ 0
 IO69
-Text GLabel 7400 3000 2    50   Input ~ 0
+Text GLabel 7500 3000 2    50   Input ~ 0
 IO71
-Text GLabel 7400 2750 2    50   Input ~ 0
+Text GLabel 7500 2750 2    50   Input ~ 0
 IO72
-Text GLabel 7400 2500 2    50   Input ~ 0
+Text GLabel 7500 2500 2    50   Input ~ 0
 IO73
-Text GLabel 7400 2250 2    50   Input ~ 0
+Text GLabel 7500 2250 2    50   Input ~ 0
 IO74
 Text GLabel 8900 3750 0    50   Input ~ 0
 CDONE
@@ -925,16 +925,72 @@ Text GLabel 8900 3950 0    50   Input ~ 0
 SPI_SCK
 Text GLabel 8900 4050 0    50   Input ~ 0
 SPI_CS
-Text GLabel 7400 5050 2    50   Input ~ 0
+Text GLabel 7500 5050 2    50   Input ~ 0
 IO94
-Text GLabel 7400 4750 2    50   Input ~ 0
+Text GLabel 7500 4750 2    50   Input ~ 0
 IO95
-Text GLabel 7400 4450 2    50   Input ~ 0
+Text GLabel 7500 4450 2    50   Input ~ 0
 IO96
-Text GLabel 7400 4150 2    50   Input ~ 0
+Text GLabel 7500 4150 2    50   Input ~ 0
 IO97
-Text GLabel 7400 3900 2    50   Input ~ 0
+Text GLabel 7500 3900 2    50   Input ~ 0
 IO99
-Text GLabel 7400 3600 2    50   Input ~ 0
+Text GLabel 7500 3600 2    50   Input ~ 0
 IO100
+Wire Wire Line
+	7400 2250 7500 2250
+Wire Wire Line
+	7400 2500 7500 2500
+Wire Wire Line
+	7400 2750 7500 2750
+Wire Wire Line
+	7400 3000 7500 3000
+Wire Wire Line
+	7450 5450 7550 5450
+Wire Wire Line
+	7450 5550 7550 5550
+Wire Wire Line
+	7400 5900 7500 5900
+Wire Wire Line
+	7400 6000 7500 6000
+Wire Wire Line
+	7400 3600 7500 3600
+Wire Wire Line
+	7400 3900 7500 3900
+Wire Wire Line
+	7400 4150 7500 4150
+Wire Wire Line
+	7400 4450 7500 4450
+Wire Wire Line
+	7400 4750 7500 4750
+Wire Wire Line
+	7400 5050 7500 5050
+Wire Wire Line
+	8950 2200 9050 2200
+Wire Wire Line
+	8950 2450 9050 2450
+Wire Wire Line
+	8950 2700 9050 2700
+Wire Wire Line
+	8950 2950 9050 2950
+Wire Wire Line
+	8950 3200 9050 3200
+Wire Wire Line
+	8950 3400 9050 3400
+Wire Wire Line
+	8900 3750 9000 3750
+Wire Wire Line
+	8900 3850 9000 3850
+Wire Wire Line
+	8900 3950 9000 3950
+Wire Wire Line
+	8900 4050 9000 4050
+Wire Wire Line
+	8900 4150 9000 4150
+Wire Wire Line
+	8900 4250 9000 4250
+Wire Wire Line
+	8900 4600 9000 4600
+Wire Wire Line
+	8900 4700 9000 4700
 $EndSCHEMATC
