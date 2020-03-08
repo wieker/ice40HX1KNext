@@ -141,44 +141,6 @@ Connection ~ 3550 3250
 Wire Wire Line
 	3550 3650 3550 3450
 Connection ~ 3550 3450
-Text GLabel 8000 4200 2    50   Input ~ 0
-IO51
-Text GLabel 8000 4100 2    50   Input ~ 0
-IO52
-Text GLabel 8000 4000 2    50   Input ~ 0
-IO53
-Text GLabel 8000 3900 2    50   Input ~ 0
-IO54
-Text GLabel 8000 3800 2    50   Input ~ 0
-IO56
-Text GLabel 8000 3700 2    50   Input ~ 0
-IO57
-Text GLabel 8000 3600 2    50   Input ~ 0
-IO59
-Text GLabel 8000 3500 2    50   Input ~ 0
-IO60
-Text GLabel 8000 3400 2    50   Input ~ 0
-IO62
-Text GLabel 8000 3300 2    50   Input ~ 0
-IO63
-Text GLabel 8000 3200 2    50   Input ~ 0
-IO64
-Text GLabel 8000 3100 2    50   Input ~ 0
-IO65
-Text GLabel 8000 3000 2    50   Input ~ 0
-IO66
-Text GLabel 8000 2900 2    50   Input ~ 0
-IO68
-Text GLabel 8000 2800 2    50   Input ~ 0
-IO69
-Text GLabel 8000 2700 2    50   Input ~ 0
-IO71
-Text GLabel 8000 2600 2    50   Input ~ 0
-IO72
-Text GLabel 8000 2500 2    50   Input ~ 0
-IO73
-Text GLabel 8000 2400 2    50   Input ~ 0
-IO74
 Text GLabel 5050 2300 0    50   Input ~ 0
 IO78
 Text GLabel 5050 2400 0    50   Input ~ 0
@@ -215,19 +177,6 @@ Text GLabel 5050 3900 0    50   Input ~ 0
 IO97
 Text GLabel 5050 4000 0    50   Input ~ 0
 IO99
-Text GLabel 5050 4100 0    50   Input ~ 0
-IO100
-$Comp
-L Connector:Conn_01x20_Male J4
-U 1 1 5E67DAE5
-P 7800 3300
-F 0 "J4" H 7908 4381 50  0000 C CNN
-F 1 "Conn_01x20_Male" H 7908 4290 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical" H 7800 3300 50  0001 C CNN
-F 3 "~" H 7800 3300 50  0001 C CNN
-	1    7800 3300
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector:Conn_01x20_Male J3
 U 1 1 5E67DAEB
@@ -239,8 +188,6 @@ F 3 "~" H 5250 3300 50  0001 C CNN
 	1    5250 3300
 	-1   0    0    1   
 $EndComp
-NoConn ~ 8000 4300
-NoConn ~ 5050 4200
 $Comp
 L power:GND #PWR018
 U 1 1 5E61E4BE
@@ -255,4 +202,38 @@ $EndComp
 Wire Wire Line
 	3550 3650 3550 4200
 Connection ~ 3550 3650
+$Comp
+L power:GND #PWR098
+U 1 1 5E64C279
+P 4200 4600
+F 0 "#PWR098" H 4200 4350 50  0001 C CNN
+F 1 "GND" H 4205 4427 50  0000 C CNN
+F 2 "" H 4200 4600 50  0001 C CNN
+F 3 "" H 4200 4600 50  0001 C CNN
+	1    4200 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR099
+U 1 1 5E64C825
+P 4250 3250
+F 0 "#PWR099" H 4250 3100 50  0001 C CNN
+F 1 "+3V3" H 4265 3423 50  0000 C CNN
+F 2 "" H 4250 3250 50  0001 C CNN
+F 3 "" H 4250 3250 50  0001 C CNN
+	1    4250 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 4600 4200 4100
+Wire Wire Line
+	4200 4100 5050 4100
+Wire Wire Line
+	5050 4200 4400 4200
+Wire Wire Line
+	4400 4200 4400 3600
+Wire Wire Line
+	4400 3600 4250 3600
+Wire Wire Line
+	4250 3600 4250 3250
 $EndSCHEMATC

@@ -521,6 +521,54 @@ Wire Wire Line
 Wire Wire Line
 	4750 5050 4750 5300
 Connection ~ 4750 5300
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5E6EFF2C
+P 2950 4950
+F 0 "BT1" H 3068 5046 50  0000 L CNN
+F 1 "Battery_Cell" H 3068 4955 50  0000 L CNN
+F 2 "" V 2950 5010 50  0001 C CNN
+F 3 "~" V 2950 5010 50  0001 C CNN
+	1    2950 4950
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	4750 5300 4200 5300
+	2950 4750 3400 4750
+Wire Wire Line
+	3600 4750 3600 4950
+Wire Wire Line
+	3600 4950 3800 4950
+Connection ~ 3600 4750
+Wire Wire Line
+	3600 4750 3800 4750
+Wire Wire Line
+	2950 5050 2950 5300
+Wire Wire Line
+	2950 5300 3400 5300
+Wire Wire Line
+	4200 5150 4200 5300
+Connection ~ 4200 5300
+Wire Wire Line
+	4200 5300 4750 5300
+$Comp
+L Device:C C?
+U 1 1 5E6F85E4
+P 3400 5000
+F 0 "C?" H 3515 5046 50  0000 L CNN
+F 1 "C" H 3515 4955 50  0000 L CNN
+F 2 "" H 3438 4850 50  0001 C CNN
+F 3 "~" H 3400 5000 50  0001 C CNN
+	1    3400 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 4850 3400 4750
+Connection ~ 3400 4750
+Wire Wire Line
+	3400 4750 3600 4750
+Wire Wire Line
+	3400 5150 3400 5300
+Connection ~ 3400 5300
+Wire Wire Line
+	3400 5300 4200 5300
 $EndSCHEMATC

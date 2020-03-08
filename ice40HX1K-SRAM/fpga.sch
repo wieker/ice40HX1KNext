@@ -881,4 +881,60 @@ Text GLabel 7400 5900 0    50   Input ~ 0
 uart_tx
 Text GLabel 7400 6000 0    50   Input ~ 0
 uart_rx
+Text GLabel 7400 6000 2    50   Input ~ 0
+IO54
+Text GLabel 7400 5900 2    50   Input ~ 0
+IO56
+Text GLabel 7450 5550 2    50   Input ~ 0
+IO57
+Text GLabel 7450 5450 2    50   Input ~ 0
+IO59
+Text GLabel 8900 4700 0    50   Input ~ 0
+IO60
+Text GLabel 8900 4600 0    50   Input ~ 0
+IO64
+Text GLabel 8950 2200 0    50   Input ~ 0
+IO62
+Text GLabel 8950 3400 0    50   Input ~ 0
+IO63
+Text GLabel 8950 2450 0    50   Input ~ 0
+IO65
+Text GLabel 8950 2700 0    50   Input ~ 0
+IO66
+Text GLabel 8950 2950 0    50   Input ~ 0
+IO68
+Text GLabel 8950 3200 0    50   Input ~ 0
+IO69
+Text GLabel 7400 3000 2    50   Input ~ 0
+IO71
+Text GLabel 7400 2750 2    50   Input ~ 0
+IO72
+Text GLabel 7400 2500 2    50   Input ~ 0
+IO73
+Text GLabel 7400 2250 2    50   Input ~ 0
+IO74
+Text GLabel 8900 3750 0    50   Input ~ 0
+CDONE
+Text GLabel 8900 3850 0    50   Input ~ 0
+CRESET
+Text GLabel 8900 4250 0    50   Input ~ 0
+SPI_OUT
+Text GLabel 8900 4150 0    50   Input ~ 0
+SPI_IN
+Text GLabel 8900 3950 0    50   Input ~ 0
+SPI_SCK
+Text GLabel 8900 4050 0    50   Input ~ 0
+SPI_CS
+Text GLabel 7400 5050 2    50   Input ~ 0
+IO94
+Text GLabel 7400 4750 2    50   Input ~ 0
+IO95
+Text GLabel 7400 4450 2    50   Input ~ 0
+IO96
+Text GLabel 7400 4150 2    50   Input ~ 0
+IO97
+Text GLabel 7400 3900 2    50   Input ~ 0
+IO99
+Text GLabel 7400 3600 2    50   Input ~ 0
+IO100
 $EndSCHEMATC
